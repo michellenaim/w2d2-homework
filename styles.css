@@ -12,6 +12,7 @@ header {
     background-color:rgb(255, 255, 255, 0.8) ;
     width: 700px;
     margin: 2em auto 0 auto;
+    height: 115px;
 }
 .main-header .logo img {
     width: 100px;
@@ -27,6 +28,7 @@ header {
 /* Navigation */
 .main-menu {
     font-weight: 400;
+    z-index: 1;
 }
 .main-menu ul li {
     list-style-type: none;
