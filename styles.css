@@ -12,8 +12,6 @@ header {
     background-color:rgb(255, 255, 255, 0.8) ;
     width: 700px;
     margin: 2em auto 0 auto;
-    min-height: 100px;
-    height: 100px;
 }
 .main-header .logo img {
     width: 100px;
@@ -22,9 +20,12 @@ header {
     float: left;
 }
 
+.navbar {
+    padding: 0 !important;
+}
+
 /* Navigation */
 .main-menu {
-    margin-left: 227px;
     font-weight: 400;
 }
 .main-menu ul li {
@@ -50,7 +51,7 @@ header {
     border: none;
 }
 .main-menu ul li.active a {
-    color: #fff;
+    color: #fff; /*This is not working*/
 }
 
 /* Main */
@@ -119,7 +120,6 @@ footer #disclaimer p {
 footer #nondisclaimer .social .fa {
     padding: 15px;
     font-size: 15px;
-    width: 15px;
     text-align: center;
     text-decoration: none;
     margin: 0 4px;
@@ -145,7 +145,9 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Home */
 
-
+/* .max-h {
+    max-height: 100px;
+} */
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
@@ -162,6 +164,10 @@ footer #nondisclaimer .social .fa-instagram {
         margin: 0;
         text-align: center;
         float: none;
+        background: rgb(235, 234, 234)
+      }
+      footer {
+        height: 310px;
       }
 }
 
