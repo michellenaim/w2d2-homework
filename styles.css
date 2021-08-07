@@ -74,10 +74,10 @@ section {
     background-color: #4288C3;
 }
 section #partners {  
-    width: 1200px;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
+    list-style: none;
 }
 section #partners .partner {
     display: inline-block;
@@ -150,7 +150,7 @@ footer #nondisclaimer .social .fa-instagram {
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -188,4 +188,4 @@ footer #nondisclaimer .social .fa-instagram {
         min-height: 450px;
         margin-top: 1em;
       }
-} */
+}
