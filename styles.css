@@ -1,35 +1,35 @@
 /* Header */
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+    min-height: 275px;
 }
 
-#home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: cover;
+#home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }  
 
-#activities header {
-background: no-repeat lightgrey url(images/runfly.jpg);
-background-size: cover; 
+#activities {
+  background: no-repeat white url(images/runfly.jpg);
+  background-size: 100% 400px;
 }
 
-#contact header {
-background: no-repeat lightgrey url(images/cliff_rock.jpg);
-background-size: cover; 
+#contact {
+  background: no-repeat white url(images/cliff_rock.jpg);
+  background-size: 100% 400px; 
 }
 
-#cliffs header {
-    background: no-repeat lightgrey url(images/forest_cliff.jpg);
-    background-size: cover; /* Similar to my home header because it fits my screen */
+#cliffs {
+    background: no-repeat white url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
   }  
 
 .main-header {
-    background-color:rgb(255, 255, 255, 0.8) ;
+    background-color: rgba(38, 41, 61, 0.7);
     width: 700px;
     margin: 2em auto 0 auto;
     height: 115px;
+    color: rgb(255, 255, 255);
 }
 .main-header .logo img {
     width: 100px;
@@ -47,6 +47,11 @@ background-size: cover;
     font-weight: 400;
     z-index: 1;
 }
+
+.main-menu ul {
+  color: rgb(255, 255, 255);
+}
+
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
@@ -62,8 +67,9 @@ background-size: cover;
     text-decoration: none;
     color: #888;
 }
-.main-menu ul li a:hover {
-    color: #9ed034;
+
+.main-menu ul li:hover {
+    background-color: lightgray
 }
 .main-menu ul li.active {
     background: #9ed034;
@@ -71,6 +77,10 @@ background-size: cover;
 }
 .main-menu ul li.active a {
     color: #fff; /*This is not working*/
+}
+
+.main-menu ul li:first {
+  border-left: none;
 }
 
 /* Main */
@@ -258,6 +268,7 @@ table {
   .email span:first-child {
     font-weight: bold;
   }
+
   
   form {
     margin: 1em auto 0 auto;
@@ -266,11 +277,13 @@ table {
   fieldset {
     border: solid 3px #9ed034;
   }
-  
-  form legend {
+
+  form fieldset legend {
     color: #4977d1;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 0 0.5em;
+    width: auto;
   }
   
   label {
@@ -311,14 +324,7 @@ table {
     text-align-last: center;
   }
   
-  input[type="submit"] {
-    /* background-color: #4977d1; */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
+  button {
     margin: 20px 0 10px 0;
     width: 135px;
     margin-left: 355px;
@@ -415,7 +421,7 @@ table {
     }
     .main-menu {
         width: 200px;
-        background-color:rgb(255, 255, 255);
+        background-color: rgba(38, 41, 61, 0.7);
         position: absolute;
         right: 1.7em;
       }
