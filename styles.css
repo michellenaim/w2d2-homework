@@ -4,25 +4,27 @@ header {
     min-height: 275px;
 }
 
-#home {
-    background: no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
-}  
+.home {
+  background: no-repeat white url(images/cliff_ocean.jpg);
+  min-height: 400px;
+  background-size: cover;
+}
 
-#activities {
+.activities {
   background: no-repeat white url(images/runfly.jpg);
-  background-size: 100% 400px;
+  min-height: 400px;
+  background-size: cover;
 }
 
-#contact {
+.contact {
   background: no-repeat white url(images/cliff_rock.jpg);
-  background-size: 100% 400px; 
-}
+  min-height: 400px;
+  background-size: cover;}
 
-#cliffs {
+.cliffs {
     background: no-repeat white url(images/forest_cliff.jpg);
-    background-size: 100% 400px;
-  }  
+    min-height: 400px;
+    background-size: cover;  }  
 
 .main-header {
     background-color: rgba(38, 41, 61, 0.7);
@@ -30,6 +32,7 @@ header {
     margin: 2em auto 0 auto;
     height: 115px;
     color: rgb(255, 255, 255);
+    margin-top: -360px;
 }
 .main-header .logo img {
     width: 100px;
@@ -207,7 +210,16 @@ table {
     vertical-align: middle;
     border: solid 1px #852b1b;
   }
+
+  .table td, .table th {
+    vertical-align: middle;
+  }
   
+  .table thead th {
+    vertical-align: middle;
+    border-bottom: solid 1px #852b1b;;
+  }
+
   .green {
     background-color: #9ed034;
     color: white;
@@ -232,22 +244,6 @@ table {
     width: 600px;
     border: 2px solid #9ed034;
     padding: 0.75em;
-  }
-  
-  #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
-    display: inline-block;
-    margin: 0;
-  }
-  
-  #activities main #result {
-    min-height: 50px;
-    width: 300px;
-    padding: 0;
-  }
-  
-  #activities main #result h4 {
-    margin-bottom: 1em;
-    font-size: 1.15em;
   }
   
   #activities main #displaySelected #sendinfo input[type-="email"] {
@@ -278,12 +274,13 @@ table {
     border: solid 3px #9ed034;
   }
 
-  form fieldset legend {
+  .legend {
     color: #4977d1;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0 0.5em;
     width: auto;
+    padding: 10px;
+    font-size: 22px;
   }
   
   label {
@@ -291,60 +288,30 @@ table {
     margin: 15px 0 0 0;
   }
   
-  .textbox label,
-  .commentbox label {
-    display: block;
-  }
-  
-  .radios,
-  .selectmenu {
-    margin: 15px 0 0 2em;
-  }
-  
-  .textbox,
-  .commentbox {
-    display: block;
-    margin: 15px 0 0 2em;
-  }
-  
-  input {
-    width: 450px;
-  }
-  
-  input[type="radio"] {
-    width: 25px;
-  }
-  
-  textarea {
-    width: 450px;
-  }
-  
   select {
-    width: 150px;
     text-align-last: center;
   }
   
-  button {
-    margin: 20px 0 10px 0;
-    width: 135px;
-    margin-left: 355px;
+  .button {
+    display: flex;
+    justify-content: flex-end;
   }
   
   .randomcode {
     display: flex;
-    align-items: center;
-  }
-  
-  .randomcode input[type="text"] {
-    width: 155px;
-    margin-left: 200px;
-    height: 25px;
-    margin-right: 15px;
+    justify-content: flex-end;
   }
   
   #codes {
     background: rgb(173, 173, 173);
-    padding: 15px
+    padding: 15px;
+    margin-left: 10px;
+  }
+
+  .send-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px
   }
   
   /* Cliffs */

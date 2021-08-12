@@ -10,16 +10,9 @@ $(document).ready(function() {
               $(this).toggleClass('green')
 
               if ($(this).hasClass("green")) {
-                $('#displaySelected').css('visibility', 'visible');
-                $('#displaySelected').css('margin-top', '2em');
-                $('#result').append("<p>" + content + " at " + colName + "</p>");
+                $('#result').append("<p class='modal-body'>" + content + " at " + colName + "</p>");
               } else {
                 $('#result p:contains('+content+')').remove();
-
-                if ($('#result').has('p').length == false) {
-                  $('#displaySelected').css('visibility', 'hidden');
-                  $('#displaySelected').css('margin-top', '0');
-                }
               }
             }
         })    
